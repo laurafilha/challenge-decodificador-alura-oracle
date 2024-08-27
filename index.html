@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="/script.js"></script>
+    <link rel="shortcut icon" href="/assets/imagens/logo-LR-laranja.svg" />
+    <title>Decodificador de Texto</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/assets/imagens/logo-LR-laranja.svg"
+        alt="Logo Laura Rodrigues"
+      />
+    </header>
+    <main class="principal">
+      <h1>Super codificador de textos</h1>
+      <div class="principal__input">
+        <div class="input">
+          <textarea
+            id="input-texto"
+            rows="6"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+
+          <div class="principal__botoes">
+            <div class="input__span">
+              <ion-icon name="alert-circle-outline"></ion-icon>
+              <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="principal__botoes__botoes">
+              <button
+                onclick="criptografar()"
+                class="principal__botoes__criptografar"
+              >
+                Criptografar
+              </button>
+              <button
+                onclick="descriptografar()"
+                class="principal__botoes__descriptografar"
+              >
+                Descriptografar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="output" id="output-div">
+          <img
+            class="imagem__maquina"
+            src="/assets/imagens/maquina.png"
+            alt="ilustração de máquina de escrever"
+          />
+          <div class="output__texto">
+            <h2>Sua mensagem criptografada vai aparecer aqui:</h2>
+            <span id="output-texto"
+              >Digite um texto para ser criptografado ou descriptografado</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        Desenvolvido por
+        <a href="https://github.com/laurafilha">Laura Rodrigues</a> com ajuda
+        das trilhas de desenvolvimento
+        <a href="https://www.alura.com.br/">Alura</a> e
+        <a href="https://www.oracle.com/br/education/oracle-next-education/"
+          >Oracle Next Education</a
+        >.
+      </div>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/laurafia/"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://github.com/laurafilha"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://dribbble.com/laurafia"
+          ><ion-icon name="logo-dribbble"></ion-icon
+        ></a>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
